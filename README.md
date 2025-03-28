@@ -19,6 +19,7 @@ Cloudflare Tunnel | (soon) Remote access to internal services     | (via domain)
 All services are deployed via individual Docker Compose files, located in their respective folders.
 
 ---
+<!-- FOLDER_TREE_START -->
 ## 📁 Folder Structure
 
 ```
@@ -39,7 +40,7 @@ palkia-stack/
 ├── .gitignore
 └── README.md
 ```
-
+<!-- FOLDER_TREE_END -->
 ---
 Stack Overview
 

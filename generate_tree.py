@@ -22,16 +22,22 @@ def generate_tree():
     return "\n".join(lines)
 
 def replace_in_readme(tree_text):
+    start_tag = "<!-- FOLDER_TREE_START -->"
+    end_tag = "<!-- FOLDER_TREE_END -->"
+
     with open("README.md", "r") as f:
         content = f.read()
 
-    start = "## 📁 Folder Structure"
-    end = "\n##" if "\n##" in content.replace(start, "", 1) else "\n---"
+    if start_tag not in content or end_tag not in content:
+        print("Marker tags not found in README.md")
+        return
 
-    pre = content.split(start)[0].rstrip()
-    post = content.split(end, 1)[-1].lstrip() if end in content else ""
+    pre = content.split(start_tag)[0]
+    post = content.split(end_tag)[-1]
 
-    new_content = f"{pre}\n{tree_text}\n\n---\n{post}"
+    new_block = f"{start_tag}\n{tree_text}\n{end_tag}"
+    new_content = pre + new_block + post
+
     with open("README.md", "w") as f:
         f.write(new_content)
 
