@@ -1,0 +1,8 @@
+# Ignore only runtime data, keep config
+**/data/*.db
+**/data/*.sqlite
+**/data/*.log
+
+# Ignore all Pi-hole persistent config
+pihole/etc-pihole/
+pihole/etc-dnsmasq.d/
