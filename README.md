@@ -20,21 +20,19 @@ All services are deployed via individual Docker Compose files, located in their 
 
 ---
 
-## Folder Structure
+## 📁 Folder Structure
 
-palkia-stack/
-├── homarr/
-│   └── docker-compose.yml
-├── portainer/
-│   └── docker-compose.yml
-├── pihole/
-│   └── docker-compose.yml  (config excluded)
-├── uptime-kuma/
-│   └── docker-compose.yml
-├── .gitignore
-└── README.md
+- `homarr/`
+  - `docker-compose.yml`
+- `portainer/`
+  - `docker-compose.yml`
+- `pihole/`
+  - `docker-compose.yml` _(config volumes excluded via .gitignore)_
+- `uptime-kuma/`
+  - `docker-compose.yml`
+- `.gitignore`
+- `README.md`
 
----
 
 ## How to Deploy
 
