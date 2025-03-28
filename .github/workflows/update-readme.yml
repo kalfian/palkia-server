@@ -1,0 +1,35 @@
+name: Update README folder structure
+
+on:
+  push:
+    paths:
+      - '**/*.yml'
+      - '**/docker-compose.yml'
+      - 'generate_tree.py'
+      - 'README.md'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Run script
+      run: |
+        python generate_tree.py
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'palkia-bot'
+        git config --global user.email 'bot@palkia.local'
+        git add README.md
+        git diff --cached --quiet || git commit -m "Auto-update folder structure in README"
+        git push
+
