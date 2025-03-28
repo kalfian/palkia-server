@@ -40,6 +40,41 @@ palkia-stack/
 └── README.md
 ```
 
+---
+Stack Overview
+
+Service         | Description                                      | Port
+----------------|--------------------------------------------------|-------
+Portainer       | Manage Docker containers via Web UI             | 9000
+Homarr          | Home dashboard for all services & shortcuts     | 7575
+Pi-hole         | DNS filtering, ad-blocking (config not saved)   | 8080
+Uptime Kuma     | Monitor uptime for services & devices           | 3001
+Cloudflare Tunnel | (soon) Remote access to internal services     | (via domain)
+
+All services are deployed via individual Docker Compose files, located in their respective folders.
+
+---
+## 📁 Folder Structure
+
+```
+palkia-stack/
+├── homarr/
+│   └── docker-compose.yml
+│
+├── pihole/
+│   └── docker-compose.yml
+│
+├── portainer/
+│   └── docker-compose.yml
+│
+├── uptime-kuma/
+│   └── docker-compose.yml
+│
+├── generate_tree.py
+├── .gitignore
+└── README.md
+```
+
 ## How to Deploy
 
 1. Clone this repository:
