@@ -1,0 +1,12 @@
+.:53 {
+    log
+    errors
+    template IN A {
+        match .*\.home
+        answer "{{ .Name }} 60 IN A 10.20.30.100"
+        fallthrough
+    }
+    forward . 1.1.1.1 8.8.8.8
+    cache 30
+}
+

@@ -1,0 +1,1 @@
+2025/04/14 11:54:29 [warn] 248#248: *2578 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/74/0000000746 while reading upstream, client: 10.20.30.41, server: npm.home, request: "GET /js/main.bundle.js?v=2.12.3 HTTP/1.1", upstream: "http://10.20.30.100:81/js/main.bundle.js?v=2.12.3", host: "npm.home", referrer: "http://npm.home/"
