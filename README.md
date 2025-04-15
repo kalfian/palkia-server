@@ -72,6 +72,3 @@ palkia-stack/
 
 ---
 
-Maintained by:
-Kukuh – home server tinkerer, devops enthusiast, and network space-time guardian.
-
