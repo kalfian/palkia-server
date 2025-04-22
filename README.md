@@ -28,10 +28,16 @@ palkia-stack/
 ├── homarr/
 │   └── docker-compose.yml
 │
+├── nginx-proxy-manager/
+│   └── docker-compose.yml
+│
 ├── pihole/
 │   └── docker-compose.yml
 │
 ├── portainer/
+│   └── docker-compose.yml
+│
+├── radicale/
 │   └── docker-compose.yml
 │
 ├── uptime-kuma/
