@@ -14,6 +14,7 @@ Portainer       | Manage Docker containers via Web UI             | 9000
 Homarr          | Home dashboard for all services & shortcuts     | 7575
 Pi-hole         | DNS filtering, ad-blocking (config not saved)   | 8080
 Uptime Kuma     | Monitor uptime for services & devices           | 3001
+Nginx Proxy Manager | Route all server to *.home                  | 81
 Cloudflare Tunnel | (soon) Remote access to internal services     | (via domain)
 
 All services are deployed via individual Docker Compose files, located in their respective folders.
@@ -70,7 +71,4 @@ palkia-stack/
 - Portainer
 
 ---
-
-Maintained by:
-Kukuh – home server tinkerer, devops enthusiast, and network space-time guardian.
 
