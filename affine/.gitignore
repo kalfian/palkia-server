@@ -1,0 +1,4 @@
+/pgdata/*
+/config/*
+/storage/*
+/postgres/*
