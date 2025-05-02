@@ -9,7 +9,7 @@ on:
       - 'README.md'
 
 permissions:
-  contents: write  # ⬅️ ini kunci agar GITHUB_TOKEN bisa push
+  contents: write
 
 jobs:
   update-readme:
