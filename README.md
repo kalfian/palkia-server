@@ -25,6 +25,15 @@ All services are deployed via individual Docker Compose files, located in their 
 
 ```
 palkia-stack/
+├── affine/
+│   └── docker-compose.yml
+│
+├── cloudflare-tunnel/
+│   └── docker-compose.yml
+│
+├── docmost/
+│   └── docker-compose.yml
+│
 ├── homarr/
 │   └── docker-compose.yml
 │
@@ -35,9 +44,6 @@ palkia-stack/
 │   └── docker-compose.yml
 │
 ├── portainer/
-│   └── docker-compose.yml
-│
-├── radicale/
 │   └── docker-compose.yml
 │
 ├── uptime-kuma/
