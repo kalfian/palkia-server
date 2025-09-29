@@ -3,12 +3,19 @@ services:
     container_name: portainer
     image: portainer/portainer-ce:latest
     restart: unless-stopped
-    ports:
-      - "9000:9000"
+      #ports:
+      # "9000:9000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
+    networks:
+      - nginx-proxy-manager_default
 
 volumes:
   portainer_data:
+
+networks:
+  nginx-proxy-manager_default:
+    external: true
+
 

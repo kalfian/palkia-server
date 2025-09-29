@@ -1,5 +1,0 @@
-/pgdata/*
-/config/*
-/storage/*
-/postgres/*
-.env

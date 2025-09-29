@@ -3,7 +3,12 @@ services:
     container_name: uptime-kuma
     image: louislam/uptime-kuma:latest
     restart: unless-stopped
-    ports:
-      - "3001:3001"
+      #ports:
+      #- "3001:3001"
     volumes:
       - ./data:/app/data
+    networks:
+      - nginx-proxy-manager_default
+networks:
+  nginx-proxy-manager_default:
+    external: true

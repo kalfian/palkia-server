@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  adguardhome:
+    image: adguard/adguardhome
+    container_name: adguardhome
+    ports:
+      # Port DNS (WAJIB ADA)
+      - "53:53/tcp"
+      - "53:53/udp"
+      # Port untuk setup awal (hanya dibutuhkan sekali)
+      - "3000:3000/tcp"
+      # Port web 80 & 443 di-nonaktifkan karena akan di-handle oleh NPM
+      # - "80:80/tcp"
+      # - "443:443/tcp"
+      # Port opsional jika butuh DHCP atau DNS-over-TLS
+      - "67:67/udp" # DHCP
+      - "68:68/udp" # DHCP
+      - "853:853/tcp" # DNS-over-TLS
+      - "8080:80/tcp"
+    volumes:
+      - ./adguard_work:/opt/adguardhome/work
+      - ./adguard_conf:/opt/adguardhome/conf
+    restart: unless-stopped
+    networks:
+      # Ganti 'npm_network' dengan nama jaringan Docker yang dipakai NPM
+      - nginx-proxy-manager_default
+
+networks:
+  # Deklarasikan bahwa jaringan ini sudah ada (dibuat oleh NPM)
+  nginx-proxy-manager_default:
+    external: true
+
