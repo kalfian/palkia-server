@@ -25,22 +25,16 @@ All services are deployed via individual Docker Compose files, located in their 
 
 ```
 palkia-stack/
-├── affine/
+├── adguard/
 │   └── docker-compose.yml
 │
 ├── cloudflare-tunnel/
-│   └── docker-compose.yml
-│
-├── docmost/
 │   └── docker-compose.yml
 │
 ├── homarr/
 │   └── docker-compose.yml
 │
 ├── nginx-proxy-manager/
-│   └── docker-compose.yml
-│
-├── pihole/
 │   └── docker-compose.yml
 │
 ├── portainer/
