@@ -11,7 +11,8 @@ This repo contains all my Docker Compose configurations to manage network, monit
 Service         | Description                                      | Port
 ----------------|--------------------------------------------------|-------
 Portainer       | Manage Docker containers via Web UI             | 9000
-Homarr          | Home dashboard for all services & shortcuts     | 7575
+Homepage        | Home dashboard for all services & shortcuts     | 3000
+Cups            | Print server to print on air                    | 631
 Pi-hole         | DNS filtering, ad-blocking (config not saved)   | 8080
 Uptime Kuma     | Monitor uptime for services & devices           | 3001
 Nginx Proxy Manager | Route all server to *.home                  | 81
