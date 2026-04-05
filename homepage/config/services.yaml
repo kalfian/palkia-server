@@ -1,3 +1,11 @@
+- Core:
+  - Portainer:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
+      href: http://10.20.30.100:9000
+      description: Docker management
+      server: my-docker
+      container: portainer
+
 - Print:
   - CUPS Print Server:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cups.png
