@@ -31,7 +31,10 @@ palkia-stack/
 ├── cloudflare-tunnel/
 │   └── docker-compose.yml
 │
-├── homarr/
+├── cups/
+│   └── docker-compose.yml
+│
+├── homepage/
 │   └── docker-compose.yml
 │
 ├── nginx-proxy-manager/
