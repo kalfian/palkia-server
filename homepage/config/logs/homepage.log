@@ -1,0 +1,62 @@
+[2026-04-05T06:57:02.535Z] info: kubernetes.yaml was copied to the config folder
+[2026-04-05T06:57:05.440Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.391Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.422Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.457Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.487Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.530Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.552Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.589Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.622Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.656Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.672Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.692Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:06.722Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:14.458Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:57:14.487Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:08.545Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:08.611Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:08.915Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.747Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.788Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.828Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.854Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.890Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.922Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.950Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:09.981Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.003Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.016Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.038Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.069Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.684Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.957Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.979Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:10.993Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.026Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.047Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.063Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.077Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.103Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.116Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.140Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.155Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:58:11.169Z] error: Host validation failed for: 10.20.30.100:3000. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-04-05T06:59:39.330Z] info: bookmarks.yaml was copied to the config folder
+[2026-04-05T06:59:39.342Z] info: proxmox.yaml was copied to the config folder
+[2026-04-05T06:59:39.446Z] info: custom.css was copied to the config folder
+[2026-04-05T06:59:39.451Z] info: custom.js was copied to the config folder
+[2026-04-05T06:59:41.128Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T06:59:41.130Z] error: TypeError: b.map is not a function
+[2026-04-05T06:59:41.190Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T06:59:41.191Z] error: TypeError: b.map is not a function
+[2026-04-05T06:59:50.946Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T06:59:50.949Z] error: TypeError: b.map is not a function
+[2026-04-05T06:59:51.524Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T06:59:51.525Z] error: TypeError: b.map is not a function
+[2026-04-05T07:00:18.352Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T07:00:18.353Z] error: TypeError: b.map is not a function
+[2026-04-05T07:04:29.531Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T07:04:29.532Z] error: TypeError: b.map is not a function
+[2026-04-05T07:22:39.180Z] error: Failed to load services.yaml, please check for errors
+[2026-04-05T07:22:39.181Z] error: TypeError: b.map is not a function

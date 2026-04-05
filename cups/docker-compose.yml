@@ -1,0 +1,15 @@
+services:
+  cups:
+    image: anujdatar/cups
+    container_name: print-server
+    restart: unless-stopped
+    network_mode: host
+    privileged: true
+    environment:
+      - TZ=Asia/Jakarta
+    volumes:
+      - ./config:/etc/cups
+      - ./logs:/var/log/cups
+      - ./spool:/var/spool/cups
+    devices:
+      - /dev/bus/usb:/dev/bus/usb

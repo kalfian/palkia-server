@@ -1,0 +1,7 @@
+- Print:
+  - CUPS Print Server:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cups.png
+      href: http://10.20.30.100:631
+      description: HP Ink Tank 115
+      server: my-docker
+      container: print-server
