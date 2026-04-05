@@ -1,0 +1,9 @@
+# Docker volumes & data
+**/data/
+**/logs/
+**/spool/
+**/config/
+
+# OS
+.DS_Store
+Thumbs.db
