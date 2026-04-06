@@ -6,6 +6,13 @@
       server: my-docker
       container: portainer
 
+  - Nginx Proxy Manager:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/nginx-proxy-manager.png
+      href: http://10.20.30.100:81
+      description: Reverse proxy + SSL
+      server: my-docker
+      container: nginx-proxy-manager
+
 - Print:
   - CUPS Print Server:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cups.png
