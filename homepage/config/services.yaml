@@ -1,33 +1,51 @@
 - Monitor:
   - Uptime Kuma:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png
-      href: http://10.20.30.100:3001
+      href: http://uptime.palkia.local
       description: Uptime monitoring
       server: my-docker
       container: uptime-kuma
       widget:
         type: iframe
-        src: http://10.20.30.100:3001/status/palkia-server
+        src: http://uptime.palkia.local/status/palkia-server
         classes: h-96
 - Core:
   - Portainer:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
-      href: http://10.20.30.100:9000
+      href: http://portainer.palkia.local
       description: Docker management
       server: my-docker
       container: portainer
 
   - Nginx Proxy Manager:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/nginx-proxy-manager.png
-      href: http://10.20.30.100:81
+      href: http://npm.palkia.local
       description: Reverse proxy + SSL
       server: my-docker
       container: nginx-proxy-manager
 
+  - AdGuard Home:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/adguard-home.png
+      href: http://adguard.palkia.local
+      description: DNS + Ad blocking
+      server: my-docker
+      container: adguard-home
+
+- Network:
+  - MikroTik:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/mikrotik.png
+      href: http://mikrotik.palkia.local
+      description: Router
+
+  - Synology NAS:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/synology.png
+      href: http://nas.palkia.local
+      description: Network storage
+
 - Print:
   - CUPS Print Server:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cups.png
-      href: http://10.20.30.100:631
+      href: http://cups.palkia.local
       description: HP Ink Tank 115
       server: my-docker
       container: print-server
