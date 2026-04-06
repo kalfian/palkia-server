@@ -1,3 +1,14 @@
+- Monitor:
+  - Uptime Kuma:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png
+      href: http://10.20.30.100:3001
+      description: Uptime monitoring
+      server: my-docker
+      container: uptime-kuma
+      widget:
+        type: iframe
+        src: http://10.20.30.100:3001/status/palkia-server
+        classes: h-96
 - Core:
   - Portainer:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png

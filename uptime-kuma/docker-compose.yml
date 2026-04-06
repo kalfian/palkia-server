@@ -3,12 +3,15 @@ services:
     container_name: uptime-kuma
     image: louislam/uptime-kuma:latest
     restart: unless-stopped
-      #ports:
-      #- "3001:3001"
+    ports:
+      - "3001:3001"
     volumes:
       - ./data:/app/data
+    environment:
+      - UPTIME_KUMA_ALLOW_ALL_CHROME_ORIGIN=1
     networks:
-      - nginx-proxy-manager_default
+      - palkia_network
+
 networks:
-  nginx-proxy-manager_default:
+  palkia_network:
     external: true

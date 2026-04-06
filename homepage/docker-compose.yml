@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - HOMEPAGE_ALLOWED_HOSTS=10.20.30.100:3000
+      - HOMEPAGE_ALLOWED_HOSTS=10.20.30.100:3000,home.palkia.local
     volumes:
       - ./config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock:ro

@@ -252,3 +252,9 @@ E [05/Apr/2026:14:07:55 +0700] [cups-driverd] Bad driver information file \"/usr
 E [05/Apr/2026:14:07:55 +0700] [cups-driverd] Bad driver information file \"/usr/share/ppd/openprinting/Utax/Global/Italian/TAP-4531\"!
 E [05/Apr/2026:14:07:55 +0700] [cups-driverd] Bad driver information file \"/usr/share/ppd/openprinting/Utax/Global/Italian/TAP-6036i\"!
 E [05/Apr/2026:14:07:59 +0700] [CGI] ippfind (PID 198) stopped with status 2!
+E [06/Apr/2026:12:34:57 +0700] [Client 370] pam_authenticate() returned 7 (Authentication failure)
+E [06/Apr/2026:12:35:04 +0700] [Client 373] pam_authenticate() returned 7 (Authentication failure)
+E [06/Apr/2026:12:35:19 +0700] [Client 374] pam_authenticate() returned 7 (Authentication failure)
+W [06/Apr/2026:12:38:35 +0700] Printer drivers are deprecated and will stop working in a future version of CUPS. See https://github.com/OpenPrinting/cups/issues/103
+E [06/Apr/2026:12:38:35 +0700] Unable to communicate with avahi-daemon: Daemon not running
+E [06/Apr/2026:12:38:40 +0700] [Client 1] pam_authenticate() returned 7 (Authentication failure)

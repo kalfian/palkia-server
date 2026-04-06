@@ -2,11 +2,11 @@ http:
   pprof:
     port: 6060
     enabled: false
-  address: 0.0.0.0:80
+  address: 0.0.0.0:3000
   session_ttl: 720h
 users:
   - name: kukuh
-    password: $2a$10$3WoerlIPhECC46iim70aveDVz2A4j1nCiywyb4/PF8HIQQiO.m4o6
+    password: $2a$10$rRDSlgxr.C9FR1TSZGXm9eRQRX0q91igqLaLdM06ILuORgzsCLsmO
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
@@ -24,11 +24,16 @@ dns:
   refuse_any: true
   upstream_dns:
     - https://dns10.quad9.net/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
   upstream_dns_file: ""
   bootstrap_dns:
-    - 9.9.9.9
-    - 8.8.8.8
     - 1.1.1.1
+    - 8.8.8.8
+    - 9.9.9.10
+    - 149.112.112.10
+    - 2620:fe::10
+    - 2620:fe::fe:10
   fallback_dns: []
   upstream_mode: load_balance
   fastest_timeout: 1s
@@ -46,6 +51,8 @@ dns:
   cache_ttl_min: 0
   cache_ttl_max: 0
   cache_optimistic: false
+  cache_optimistic_answer_ttl: 30s
+  cache_optimistic_max_age: 12h
   bogus_nxdomain: []
   aaaa_disabled: false
   enable_dnssec: false
@@ -91,12 +98,14 @@ querylog:
   interval: 2160h
   size_memory: 1000
   enabled: true
+  ignored_enabled: false
   file_enabled: true
 statistics:
   dir_path: ""
   ignored: []
   interval: 24h
   enabled: true
+  ignored_enabled: false
 filters:
   - enabled: true
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
@@ -146,8 +155,9 @@ filtering:
   parental_block_host: family-block.dns.adguard.com
   safebrowsing_block_host: standard-block.dns.adguard.com
   rewrites:
-    - domain: '*.home.lab'
+    - domain: '*.palkia.local'
       answer: 10.20.30.100
+      enabled: true
   safe_fs_patterns:
     - /opt/adguardhome/work/userfilters/*
   safebrowsing_cache_size: 1048576
@@ -157,6 +167,7 @@ filtering:
   filters_update_interval: 24
   blocked_response_ttl: 10
   filtering_enabled: true
+  rewrites_enabled: true
   parental_enabled: false
   safebrowsing_enabled: false
   protection_enabled: true
@@ -181,4 +192,4 @@ os:
   group: ""
   user: ""
   rlimit_nofile: 0
-schema_version: 30
+schema_version: 33
