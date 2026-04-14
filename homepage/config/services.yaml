@@ -38,7 +38,7 @@
         container: adguard-home
         widget:
           type: adguard
-          url: http://adguard-home:8080
+          url: http://adguard-home:3000
           username: "{{HOMEPAGE_VAR_ADGUARD_USER}}"
           password: "{{HOMEPAGE_VAR_ADGUARD_PASS}}"
 

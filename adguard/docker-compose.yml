@@ -6,16 +6,17 @@ services:
       # Port DNS (WAJIB ADA)
       - "53:53/tcp"
       - "53:53/udp"
-      # Port untuk setup awal (hanya dibutuhkan sekali)
-      - "3002:3000/tcp"
-      # Port web 80 & 443 di-nonaktifkan karena akan di-handle oleh NPM
+      # Port web interface (default AdGuard: 3000 after setup)
+      - "8080:3000/tcp"
+      # Port setup awal (hanya dibutuhkan sekali, bisa di-comment setelah setup)
+      # - "3002:3000/tcp"
+      # Port 80 & 443 di-nonaktifkan karena di-handle oleh NPM
       # - "80:80/tcp"
       # - "443:443/tcp"
-      # Port opsional jika butuh DHCP atau DNS-over-TLS
-      #- "67:67/udp" # DHCP
-      #- "68:68/udp" # DHCP
+      # Port opsional
+      # - "67:67/udp"   # DHCP
+      # - "68:68/udp"   # DHCP
       # - "853:853/tcp" # DNS-over-TLS
-      - "8080:80/tcp"
     volumes:
       - ./adguard_work:/opt/adguardhome/work
       - ./adguard_conf:/opt/adguardhome/conf
