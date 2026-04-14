@@ -180,7 +180,7 @@ python3 generate_tree.py
 ---
 
 <!-- FOLDER_TREE_START -->
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 palkia-stack/
@@ -206,7 +206,6 @@ palkia-stack/
 │   └── docker-compose.yml
 │
 ├── generate_tree.py
-├── install.sh
 ├── .gitignore
 └── README.md
 ```
