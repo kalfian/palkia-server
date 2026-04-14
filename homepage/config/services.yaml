@@ -1,51 +1,64 @@
 - Monitor:
-  - Uptime Kuma:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png
-      href: http://uptime.palkia.local
-      description: Uptime monitoring
-      server: my-docker
-      container: uptime-kuma
-      widget:
-        type: iframe
-        src: http://uptime.palkia.local/status/palkia-server
-        classes: h-96
-- Core:
-  - Portainer:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
-      href: http://portainer.palkia.local
-      description: Docker management
-      server: my-docker
-      container: portainer
+    - Uptime Kuma:
+        icon: uptime-kuma
+        href: http://uptime.palkia.local
+        description: Service health monitoring
+        server: my-docker
+        container: uptime-kuma
+        widget:
+          type: iframe
+          src: http://uptime.palkia.local/status/palkia-server
+          classes: h-72
 
-  - Nginx Proxy Manager:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/nginx-proxy-manager.png
-      href: http://npm.palkia.local
-      description: Reverse proxy + SSL
-      server: my-docker
-      container: nginx-proxy-manager
+- Infrastructure:
+    - Portainer:
+        icon: portainer
+        href: http://portainer.palkia.local
+        description: Container management
+        server: my-docker
+        container: portainer
+        widget:
+          type: portainer
+          url: http://portainer:9000
+          env: 2
+          key: "{{HOMEPAGE_VAR_PORTAINER_KEY}}"
 
-  - AdGuard Home:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/adguard-home.png
-      href: http://adguard.palkia.local
-      description: DNS + Ad blocking
-      server: my-docker
-      container: adguard-home
+    - Nginx Proxy Manager:
+        icon: nginx-proxy-manager
+        href: http://npm.palkia.local
+        description: Reverse proxy & SSL
+        server: my-docker
+        container: nginx-proxy-manager
+
+    - AdGuard Home:
+        icon: adguard-home
+        href: http://adguard.palkia.local
+        description: DNS & ad blocking
+        server: my-docker
+        container: adguard-home
+        widget:
+          type: adguard
+          url: http://adguard-home:8080
+          username: "{{HOMEPAGE_VAR_ADGUARD_USER}}"
+          password: "{{HOMEPAGE_VAR_ADGUARD_PASS}}"
 
 - Network:
-  - MikroTik:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/mikrotik.png
-      href: http://mikrotik.palkia.local
-      description: Router
+    - MikroTik Router:
+        icon: mikrotik
+        href: http://mikrotik.palkia.local
+        description: Network gateway
+        siteMonitor: http://10.20.30.1
 
-  - Synology NAS:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/synology.png
-      href: http://nas.palkia.local
-      description: Network storage
+    - Synology NAS:
+        icon: synology-dsm
+        href: http://nas.palkia.local
+        description: Network storage
+        siteMonitor: http://10.20.30.11:1234
 
 - Print:
-  - CUPS Print Server:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/cups.png
-      href: http://cups.palkia.local
-      description: HP Ink Tank 115
-      server: my-docker
-      container: print-server
+    - CUPS Print Server:
+        icon: cups
+        href: http://cups.palkia.local
+        description: HP Ink Tank 115
+        server: my-docker
+        container: print-server

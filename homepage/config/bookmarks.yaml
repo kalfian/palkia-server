@@ -1,18 +1,26 @@
----
-# For configuration options and examples, please see:
-# https://gethomepage.dev/configs/bookmarks
-
-- Developer:
-    - Github:
-        - abbr: GH
+- Dev:
+    - GitHub:
+        - icon: github
           href: https://github.com/
+    - Docker Hub:
+        - icon: docker
+          href: https://hub.docker.com/
+    - Selfhosted Icons:
+        - icon: si-simpleicons
+          href: https://selfh.st/icons/
 
-- Social:
+- Media:
+    - YouTube:
+        - icon: youtube
+          href: https://youtube.com/
     - Reddit:
-        - abbr: RE
+        - icon: reddit
           href: https://reddit.com/
 
-- Entertainment:
-    - YouTube:
-        - abbr: YT
-          href: https://youtube.com/
+- Tools:
+    - ChatGPT:
+        - icon: openai
+          href: https://chat.openai.com/
+    - Claude:
+        - icon: si-anthropic
+          href: https://claude.ai/

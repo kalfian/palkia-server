@@ -1,5 +1,29 @@
-title: Palkia - Home Server
+title: Palkia Server
 theme: dark
-color: slate
+color: stone
+background:
+  image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80
+  blur: md
+  opacity: 30
+
 headerStyle: clean
+statusStyle: dot
+hideVersion: true
+cardBlur: md
+disableCollapse: true
+
+layout:
+  Monitor:
+    style: column
+    header: false
+  Infrastructure:
+    style: row
+    columns: 3
+  Network:
+    style: row
+    columns: 2
+  Print:
+    style: row
+    columns: 1
+
 allowedHosts: 10.20.30.100

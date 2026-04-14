@@ -5,6 +5,8 @@ services:
     restart: unless-stopped
     ports:
       - "3000:3000"
+    env_file:
+      - .env
     environment:
       - HOMEPAGE_ALLOWED_HOSTS=10.20.30.100:3000,home.palkia.local
     volumes:
