@@ -87,6 +87,7 @@ cp homepage/.env.example homepage/.env
 | Variable | Description | How to Get |
 |----------|-------------|------------|
 | `HOMEPAGE_VAR_PORTAINER_KEY` | Portainer API access token | Portainer UI → My Account → Access Tokens → Add access token |
+| `HOMEPAGE_VAR_PORTAINER_ENV` | Portainer environment ID | Portainer UI → Environments → click your environment → check URL for the ID number (default: `2`) |
 | `HOMEPAGE_VAR_ADGUARD_USER` | AdGuard Home login username | Same credentials you set during AdGuard initial setup |
 | `HOMEPAGE_VAR_ADGUARD_PASS` | AdGuard Home login password | Same credentials you set during AdGuard initial setup |
 

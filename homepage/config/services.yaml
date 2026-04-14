@@ -20,7 +20,7 @@
         widget:
           type: portainer
           url: http://portainer:9000
-          env: 2
+          env: "{{HOMEPAGE_VAR_PORTAINER_ENV}}"
           key: "{{HOMEPAGE_VAR_PORTAINER_KEY}}"
 
     - Nginx Proxy Manager:
