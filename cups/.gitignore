@@ -1,12 +1,3 @@
-# Docker volumes & data
-**/data/
-**/logs/
-**/spool/
-**/config/
-
-# Environment
-**/.env
-
-# OS
-.DS_Store
-Thumbs.db
+config/
+logs/
+spool/

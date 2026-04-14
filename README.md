@@ -8,15 +8,15 @@ This repo contains all my Docker Compose configurations to manage network, monit
 
 ## Stack Overview
 
-Service         | Description                                      | Port
-----------------|--------------------------------------------------|-------
-Portainer       | Manage Docker containers via Web UI             | 9000
-Homepage        | Home dashboard for all services & shortcuts     | 3000
-Cups            | Print server to print on air                    | 631
-Pi-hole         | DNS filtering, ad-blocking (config not saved)   | 8080
-Uptime Kuma     | Monitor uptime for services & devices           | 3001
-Nginx Proxy Manager | Route all server to *.home                  | 81
-Cloudflare Tunnel | (soon) Remote access to internal services     | (via domain)
+Service              | Description                                  | Port
+---------------------|----------------------------------------------|-------
+Portainer            | Manage Docker containers via Web UI          | 9000, 9443
+Homepage             | Home dashboard for all services & shortcuts  | 3000
+CUPS                 | Print server for USB printers over network   | 631 (host network)
+AdGuard Home         | DNS filtering & ad-blocking                  | 53, 8080
+Uptime Kuma          | Monitor uptime for services & devices        | 3001
+Nginx Proxy Manager  | Reverse proxy & SSL for *.palkia.local       | 80, 81, 443
+Cloudflare Tunnel    | Remote access to internal services           | (via domain)
 
 All services are deployed via individual Docker Compose files, located in their respective folders.
 
@@ -67,18 +67,22 @@ palkia-stack/
 
 ## Notes
 
-- Pi-hole config is intentionally excluded for permission & security reasons
-- Cloudflare Tunnel will be added soon
+- AdGuard Home requires port 53 to be available (see `adguard/README.md` for prerequisites)
+- CUPS runs in host network mode for USB printer access and requires credentials via `.env` (see `cups/.env.example`)
+- Cloudflare Tunnel requires a tunnel token via `.env` (see `cloudflare-tunnel/.env.example`)
+- All services (except CUPS) share the external `palkia_network` Docker network
 - All stacks use bind volumes, so configs persist even after reboot
 
 ---
 
 ## Credits
 
-- Pi-hole
-- Homarr
-- Uptime Kuma
-- Portainer
+- [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)
+- [Homepage](https://github.com/gethomepage/homepage)
+- [Uptime Kuma](https://github.com/louislam/uptime-kuma)
+- [Portainer](https://github.com/portainer/portainer)
+- [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
+- [CUPS](https://github.com/anujdatar/cups-docker)
 
 ---
 
