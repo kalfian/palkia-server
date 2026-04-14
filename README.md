@@ -65,6 +65,19 @@ palkia-stack/
 
 ---
 
+## DNS Setup
+
+To access services via `*.palkia.local` domains, your network's DNS must point to the AdGuard Home server (e.g. `10.20.30.100`).
+
+**Example: MikroTik Router**
+
+1. Go to **IP → DNS**, set **Servers** to `10.20.30.100`
+2. Go to **IP → DHCP Server → Networks**, select your network, set **DNS Server** to `10.20.30.100`
+
+This ensures all devices on the network automatically resolve `*.palkia.local` to the correct server via AdGuard Home.
+
+---
+
 ## Notes
 
 - AdGuard Home requires port 53 to be available (see `adguard/README.md` for prerequisites)
