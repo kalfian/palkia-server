@@ -42,6 +42,7 @@ create_proxy() {
   local domain="$1"
   local forward_host="$2"
   local forward_port="$3"
+  local advanced_config="${4:-}"
 
   if echo "$EXISTING" | grep -qx "$domain"; then
     echo "SKIP: $domain (already exists)"
@@ -63,7 +64,7 @@ create_proxy() {
       \"certificate_id\": 0,
       \"ssl_forced\": false,
       \"meta\": {\"letsencrypt_agree\": false, \"dns_challenge\": false},
-      \"advanced_config\": \"\",
+      \"advanced_config\": \"$advanced_config\",
       \"locations\": [],
       \"caching_enabled\": false,
       \"hsts_enabled\": false,
@@ -85,7 +86,8 @@ echo "========================="
 
 # Docker services (container names resolve via palkia_network)
 create_proxy "home.palkia.local"      "homepage"            3000
-create_proxy "uptime.palkia.local"    "uptime-kuma"         3001
+# Strip X-Frame-Options and CSP headers to allow iframe embedding in Homepage
+create_proxy "uptime.palkia.local"    "uptime-kuma"         3001 "proxy_hide_header X-Frame-Options;\nproxy_hide_header Content-Security-Policy;"
 create_proxy "portainer.palkia.local" "portainer"           9000
 create_proxy "npm.palkia.local"       "nginx-proxy-manager" 81
 create_proxy "adguard.palkia.local"   "adguard-home"        80
