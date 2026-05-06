@@ -5,3 +5,21 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Home Assistant
+/home-assistant/*
+!/home-assistant/docker-compose.yml
+!/home-assistant/config/
+!/home-assistant/config/configuration.yaml
+!/home-assistant/config/automations.yaml
+!/home-assistant/config/scripts.yaml
+!/home-assistant/config/scenes.yaml
+
+/home-assistant/config/.storage/
+/home-assistant/config/.cache/
+/home-assistant/config/blueprints/
+/home-assistant/config/home-assistant_v2.db*
+/home-assistant/config/home-assistant.log*
+/home-assistant/config/.HA_VERSION
+/home-assistant/config/.ha_run.lock
+/home-assistant/config/secrets.yaml
