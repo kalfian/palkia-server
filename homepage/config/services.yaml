@@ -1,14 +1,14 @@
-- Monitor:
-    - Uptime Kuma:
-        icon: uptime-kuma
-        href: http://uptime.palkia.local
-        description: Service health monitoring
-        server: my-docker
-        container: uptime-kuma
-        widget:
-          type: iframe
-          src: http://uptime.palkia.local/status/palkia-server
-          classes: h-72
+#- Monitor:
+#    - Uptime Kuma:
+#        icon: uptime-kuma
+#        href: http://uptime.palkia.local
+#        description: Service health monitoring
+#        server: my-docker
+#        container: uptime-kuma
+#        widget:
+#          type: iframe
+#          src: http://uptime.palkia.local/status/palkia-server
+#          classes: h-72
 
 - Infrastructure:
     - Portainer:
