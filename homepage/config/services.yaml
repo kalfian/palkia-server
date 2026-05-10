@@ -42,6 +42,20 @@
           username: "{{HOMEPAGE_VAR_ADGUARD_USER}}"
           password: "{{HOMEPAGE_VAR_ADGUARD_PASS}}"
 
+    - AFFiNE:
+        icon: affine
+        href: http://affine.palkia.local
+        description: Knowledge base & whiteboard
+        server: my-docker
+        container: affine
+
+    - Home Assistant:
+        icon: home-assistant
+        href: http://homeassistant.palkia.local
+        description: Smart home automation
+        server: my-docker
+        container: home-assistant
+
 - Network:
     - MikroTik Router:
         icon: mikrotik

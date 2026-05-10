@@ -91,6 +91,8 @@ create_proxy "uptime.palkia.local"    "uptime-kuma"         3001 "proxy_hide_hea
 create_proxy "portainer.palkia.local" "portainer"           9000
 create_proxy "npm.palkia.local"       "nginx-proxy-manager" 81
 create_proxy "adguard.palkia.local"   "adguard-home"        3000
+create_proxy "affine.palkia.local"    "affine"              3010
+create_proxy "homeassistant.palkia.local" "host.docker.internal" 8123
 create_proxy "cups.palkia.local"      "host.docker.internal" 631
 
 # External devices

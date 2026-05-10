@@ -23,3 +23,7 @@ Thumbs.db
 /home-assistant/config/.HA_VERSION
 /home-assistant/config/.ha_run.lock
 /home-assistant/config/secrets.yaml
+
+# AFFiNE
+/affine/.env
+/affine/data/
