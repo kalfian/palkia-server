@@ -188,10 +188,16 @@ palkia-stack/
 ├── adguard/
 │   └── docker-compose.yml
 │
+├── affine/
+│   └── docker-compose.yml
+│
 ├── cloudflare-tunnel/
 │   └── docker-compose.yml
 │
 ├── cups/
+│   └── docker-compose.yml
+│
+├── home-assistant/
 │   └── docker-compose.yml
 │
 ├── homepage/
